@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #ffe7e7, #ffeddb);
+}
+
+/* Container */
+.pin-container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    max-width: 90%;
+}
+
+h1 {
+    font-size: 24px;
+    color: #ff99c8;
+    margin-bottom: 20px;
+}
+
+/* PIN Inputs */
+.pin-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.pin-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #ffb3b3;
+    border-radius: 10px;
+    background-color: #fff0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.pin-inputs input:focus {
+    border-color: #ffa3a3;
+    background-color: #ffe0e0;
+}
+
+/* Keypad */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.key {
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffc1e3;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.2s ease-in-out;
+}
+
+.key:hover {
+    background-color: #ff99c8;
+    transform: translateY(-3px);
+}
+
+.key:active {
+    background-color: #ff85b3;
+    transform: translateY(0);
+}
+
+.key.delete {
+    grid-column: span 3;
+    background-color: #ffcccc;
+    font-size: 16px;
+}
+
+.key.delete:hover {
+    background-color: #ffb3b3;
+}
+
+/* Submit Button */
+#submitPin {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff99c8;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+#submitPin:hover {
+    background-color: #ff85b3;
+}
+
+#submitPin:active {
+    background-color: #ff709e;
+}
