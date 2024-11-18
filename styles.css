@@ -1,38 +1,36 @@
-/* General body styling for mobile responsiveness */
+/* General body styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     background: linear-gradient(to bottom, #ffe7e7, #ffeddb);
-    padding: 10px;
 }
 
 /* Container */
 .pin-container {
     text-align: center;
-    background: white;
-    padding: 20px;
+    background: #fff;
+    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 350px;
+    width: 320px;
+    max-width: 90%;
 }
 
-/* Title */
 h1 {
     font-size: 24px;
     color: #ff99c8;
     margin-bottom: 20px;
 }
 
-/* PIN Input Fields */
+/* PIN Inputs */
 .pin-inputs {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 20px;
 }
 
@@ -63,7 +61,7 @@ h1 {
 }
 
 .key {
-    font-size: 20px;
+    font-size: 18px;
     padding: 15px;
     border: none;
     border-radius: 10px;
@@ -91,4 +89,26 @@ h1 {
 }
 
 .key.delete:hover {
-    background-color:
+    background-color: #ffb3b3;
+}
+
+/* Submit Button */
+#submitPin {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff99c8;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease;
+}
+
+#submitPin:hover {
+    background-color: #ff85b3;
+}
+
+#submitPin:active {
+    background-color: #ff709e;
+}
